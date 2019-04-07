@@ -1,0 +1,30 @@
+<div class="section footer">
+  <div class="container withcolumns">
+      <img class="logo" src="{{ "/assets/img/logo-allwhite.png" | relative_url }}" />
+      <div class="column12">
+          <div class="row">
+              &copy; Copyright VeritOnc, {{ site.time | date: '%Y' }}
+          </div>
+      </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+
+      var scrollOffset = $(".primcolor.split").offset();
+      if (scrollOffset) {
+        if (scroll >= scrollOffset.top) {
+          $(".section.header").removeClass("homepage");
+        } else {
+            if (!$(".section.header").hasClass("homepage")) {
+                $(".section.header").addClass("homepage");
+            }
+        }
+      }
+  });
+  $(".hamburger").click(function() {
+      $(this).toggleClass("is-active");
+      $(".dropdown").toggleClass("is-active");
+  });
+</script>

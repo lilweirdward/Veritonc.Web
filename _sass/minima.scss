@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$font_header: 'Roboto', sans-serif;
+$font_copy: 'Montserrat', sans-serif;
+$color_prim_1: #26a69a;
+$color_prim_off: #00887a;
+$color_black: #212121;
+$color_darkgrey: #424242;
+$color_lightgrey: #eeeeee;
+
+$table-text-align: left !default;
+
+$spacing-unit:     30px !default;
+
+// Width of the content area
+$on-palm:          	600px;
+$on-laptop:        	800px;
+$large-phone:		481px;
+$tablet:			768px;
+$laptop:			1030px;
+$high-res:			1440px;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting"
+;

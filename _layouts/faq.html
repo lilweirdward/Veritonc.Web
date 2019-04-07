@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+
+<div id="faq" class="section backimg">
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+    </div>
+</div>
+<div class="section faq">
+    <div class="container">
+        {% capture section_faq %}{% include page_fractions/section.faq.md %}{% endcapture %}
+        {{ section_faq | markdownify }}
+    </div>
+</div>

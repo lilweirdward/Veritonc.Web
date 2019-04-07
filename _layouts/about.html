@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+
+<div id="about" class="section backimg">
+    <div class="container">
+        <h1>About Our Company</h1>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        {% capture section_whoweare %}{% include page_fractions/section.who-we-are.md %}{% endcapture %}
+        {{ section_whoweare | markdownify }}
+    </div>
+</div>
+<div class="section grey">
+    <div class="container">
+        {% capture section_whyus %}{% include page_fractions/section.why-us.md %}{% endcapture %}
+        {{ section_whyus | markdownify }}
+    </div>
+</div>
+<div id="doctors" class="section primcolor">
+    <div class="container">
+        <h1>Our oncologists</h1>
+        <div class="testimonial">
+            {% capture section_mark %}{% include page_fractions/section.oncologist-mark.md %}{% endcapture %}
+            {{ section_mark | markdownify }}
+        </div>
+    </div>
+</div>

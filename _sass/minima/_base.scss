@@ -1,0 +1,70 @@
+* {
+	border: none; // damn you IE
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+    font-family: $font_copy;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+ol, ul {
+    text-align: left;
+}
+
+h1 {
+    font-family: $font_header;
+	  font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 0.4em;
+    text-align: center;
+    line-height: 0.9em;
+    + h5 {
+      font-weight: 400;
+        font-size: 1rem;
+        line-height: 0.25rem;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    &.prim {
+        color: $color_prim_1;
+    }
+}
+
+img.profile {
+    display: block;
+    margin: 2rem auto;
+    border: 4px solid $color_prim_1;
+    border-radius: 50%;
+    width: 8rem;
+}
+
+.button {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0.75rem 2rem;
+    margin: 0 0.5rem;
+    display: inline-block;
+    position: relative;
+    outline: none;
+    background-color: $color_prim_1;
+    color: white;
+}
+
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}

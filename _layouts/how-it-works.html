@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+
+
+<div id="howitworks" class="section backimg">
+    <div class="container">
+        <h1>How it works</h1>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        {% capture section_howitworks %}{% include page_fractions/section.how-it-works.md %}{% endcapture %}
+        {{ section_howitworks | markdownify }}
+    </div>
+</div>
+<div class="section grey programs">
+    <div class="container withcolumns">
+        <h1>Choose a program</h1>
+        <div class="column4">
+            {% capture section_program1 %}{% include page_fractions/section.program-1.md %}{% endcapture %}
+            {{ section_program1 | markdownify }}
+        </div>
+        <div class="column4">
+            {% capture section_program2 %}{% include page_fractions/section.program-2.md %}{% endcapture %}
+            {{ section_program2 | markdownify }}
+        </div>
+        <div class="column4">
+            {% capture section_program3 %}{% include page_fractions/section.program-3.md %}{% endcapture %}
+            {{ section_program3 | markdownify }}
+        </div>
+    </div>
+</div>
+<div class="section">
+    <div class="container">
+        {% capture section_howitworks_finalstep %}{% include page_fractions/section.how-it-works.final-step.md %}{% endcapture %}
+        {{ section_howitworks_finalstep | markdownify }}
+    </div>
+</div>
+<div class="section grey questions">
+    <div class="container">
+        {% capture section_howitworks_questions %}{% include page_fractions/section.how-it-works.questions.md %}{% endcapture %}
+        {{ section_howitworks_questions | markdownify }}
+    </div>
+</div>
