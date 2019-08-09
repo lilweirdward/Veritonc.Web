@@ -326,6 +326,8 @@
   .column6.contact {
       background-color: $color_prim_1;
       padding: 2rem 0;
+      float: none;
+      margin: 0 auto;
       input, textarea {
           display: block;
           background-color: transparent;
